@@ -1,0 +1,14 @@
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.AssemblyInfoInputs.cache
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.AssemblyInfo.cs
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\bin\Debug\net7.0\ContaBancaria.exe
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\bin\Debug\net7.0\ContaBancaria.deps.json
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\bin\Debug\net7.0\ContaBancaria.runtimeconfig.json
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\bin\Debug\net7.0\ContaBancaria.dll
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\bin\Debug\net7.0\ContaBancaria.pdb
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.dll
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\refint\ContaBancaria.dll
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.pdb
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ContaBancaria.genruntimeconfig.cache
+C:\Users\shoma\OneDrive\Área de Trabalho\Conta-Bancaria\ContaBancaria\obj\Debug\net7.0\ref\ContaBancaria.dll
