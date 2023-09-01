@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ContaBancaria.Model
 {
-    internal class Conta
+    public class Conta
     {
         private int numero;
         private int agencia;
@@ -74,12 +74,12 @@ namespace ContaBancaria.Model
             this.saldo = saldo;
         }
 
-        public bool Sacar(decimal valor)
+        public virtual bool Sacar(decimal valor)
         {
 
             if (this.GetSaldo() < valor)
             {
-                Console.WriteLine("\n Saldo Insuficiente!");
+                Console.WriteLine("\nSaldo Insuficiente!");
                 return false;
             }
 
@@ -92,7 +92,7 @@ namespace ContaBancaria.Model
             this.SetSaldo(this.saldo + valor);
         }
 
-        public void Visualizar()
+        public virtual void Visualizar()
         {
 
             string tipo = "";

@@ -8,12 +8,22 @@ namespace ContaBancaria
         static void Main(string[] args)
         {
             // Teste da Classe Conta
-            Conta c1 = new Conta(1, 123, 1, "Shomara", 10000.0M);
+            /*Conta c1 = new Conta(1, 123, 1, "Shomara", 10000.0M);
             c1.Visualizar();
             c1.Sacar(12000.0M);
             c1.Visualizar();
             c1.Depositar(5000.0M);
-            c1.Visualizar();
+            c1.Visualizar();*/
+
+            Conta cc1 = new ContaCorrente(2, 159, 1, "Samantha", 100000000.00M, 100000M);
+            cc1.Visualizar();
+            cc1.Sacar(200000000.00M);
+            cc1.Visualizar();
+            cc1.Depositar(5000);
+            cc1.Visualizar();
+
+            Conta c2 = new ContaPoupanca(2, 234, 2, "Roberto", 80000000.00M, 25);
+            c2.Visualizar();
 
             int opcao;
 
