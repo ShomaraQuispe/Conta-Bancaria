@@ -7,14 +7,16 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ContaBancaria.Model
 {
-    public class Conta
+    public abstract class Conta
     {
+        //atributos
         private int numero;
         private int agencia;
         private int tipo;
         private string titular = string.Empty;
         private decimal saldo;
 
+        //metodo construtor
         public Conta(int numero, int agencia, int tipo, string titular, decimal saldo)
         {
             this.numero = numero;
@@ -23,6 +25,9 @@ namespace ContaBancaria.Model
             this.titular = titular;
             this.saldo = saldo;
         }
+
+        // Polimorfismo de Sobrecarga
+        public Conta() { }
 
         public int GetNumero()
         {
