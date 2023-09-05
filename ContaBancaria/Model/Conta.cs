@@ -26,7 +26,7 @@ namespace ContaBancaria.Model
             this.saldo = saldo;
         }
 
-        // Polimorfismo de Sobrecarga
+        // Polimorfismo de Sobrecarga, também é construtor so que vazio
         public Conta() { }
 
         public int GetNumero()
