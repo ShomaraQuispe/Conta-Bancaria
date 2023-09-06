@@ -34,7 +34,7 @@ namespace ContaBancaria
                 Console.WriteLine("         1 - Criar Conta                     ");
                 Console.WriteLine("         2 - Lista todas as Contas           ");
                 Console.WriteLine("         3 - Buscar Conta por Numero         ");
-                Console.WriteLine("         4 - Atualizar Dados da conta         ");
+                Console.WriteLine("         4 - Atualizar Dados da conta        ");
                 Console.WriteLine("         5 - Apagar Conta                    ");
                 Console.WriteLine("         6 - Sacar                           ");
                 Console.WriteLine("         7 - Depositar                       ");
