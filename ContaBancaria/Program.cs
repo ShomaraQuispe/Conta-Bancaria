@@ -1,5 +1,6 @@
 ﻿using ContaBancaria.Controller;
 using ContaBancaria.Model;
+using System.Drawing;
 
 namespace ContaBancaria
 {
@@ -9,9 +10,9 @@ namespace ContaBancaria
         static void Main(string[] args)
         {
 
-            int opcao, agencia, tipo, aniversario, numero;
+            int opcao, agencia, tipo, aniversario, numero, numeroDestino;
             string? titular;
-            decimal saldo, limite;
+            decimal saldo, limite, valor;
 
             ContaController contas = new();
 
@@ -207,7 +208,15 @@ namespace ContaBancaria
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Sacar");
                         Console.ResetColor();
-                        
+
+                        Console.WriteLine("Digite o número da Conta: ");
+                        numero = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Digite o valor do Saque: ");
+                        valor = Convert.ToDecimal(Console.ReadLine());
+
+                        contas.Sacar(numero, valor);
+
                         Keypress();
                         break;
 
@@ -215,7 +224,16 @@ namespace ContaBancaria
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Depositar");
                         Console.ResetColor();
-                        
+
+                        Console.WriteLine("Digite o número da Conta: ");
+                        numero = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Digite o valor do Depósito: ");
+                        valor = Convert.ToDecimal(Console.ReadLine());
+
+                        contas.Depositar(numero, valor);
+
+
                         Keypress();
                         break;
 
@@ -224,6 +242,17 @@ namespace ContaBancaria
                         Console.WriteLine("Transferir valores entre Contas");
                         Console.ResetColor();
                         
+                        Console.WriteLine("Digite o número da Conta de Origem: ");
+                        numero = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Digite o número da Conta de Destino: ");
+                        numeroDestino = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Digite o valor da Transferência: ");
+                        valor = Convert.ToDecimal(Console.ReadLine());
+
+                        contas.Transferir(numero, numeroDestino, valor);
+
                         Keypress();
                         break;
 
@@ -231,7 +260,7 @@ namespace ContaBancaria
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("\nOpção Inválida!\n");
                         Console.ResetColor();
-                        
+
                         Keypress();
                         break;
                 }
