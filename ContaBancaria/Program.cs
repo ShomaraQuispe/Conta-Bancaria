@@ -16,10 +16,10 @@ namespace ContaBancaria
 
             ContaController contas = new();
 
-            ContaCorrente cc1 = new ContaCorrente(contas.GerarNumero(), 123, 1, "Samantha", 100000000.00M, 1000.00M);
+            ContaCorrente cc1 = new ContaCorrente(contas.GerarNumero(), 123, 1, "Shomara", 100000000.00M, 1000.00M);
             contas.Cadastrar(cc1);
 
-            ContaPoupanca cp1 = new ContaPoupanca(contas.GerarNumero(), 123, 2, "Sabrina", 1000.00M, 10);
+            ContaPoupanca cp1 = new ContaPoupanca(contas.GerarNumero(), 123, 2, "Evander", 5000.00M, 10);
             contas.Cadastrar(cp1);
 
             while (true)
@@ -75,7 +75,7 @@ namespace ContaBancaria
                 {
                     case 1:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Criar conta\n\n");
+                        Console.WriteLine("Criar conta\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite o Número da Agência: ");
@@ -117,7 +117,7 @@ namespace ContaBancaria
 
                     case 2:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Lista todas as contas");
+                        Console.WriteLine("Lista todas as contas\n");
                         Console.ResetColor();
 
                         contas.ListarTodas();
@@ -127,7 +127,7 @@ namespace ContaBancaria
 
                     case 3:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Consultar dados da Conta - por número\n\n");
+                        Console.WriteLine("Consultar dados da Conta - por número\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite o número da Conta: ");
@@ -140,7 +140,7 @@ namespace ContaBancaria
 
                     case 4:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Atalizar Dados da conta");
+                        Console.WriteLine("Atalizar Dados da conta\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite o número da conta: ");
@@ -193,7 +193,7 @@ namespace ContaBancaria
 
                     case 5:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Apagar conta");
+                        Console.WriteLine("Apagar conta\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite a conta que deseja apagar: ");
@@ -206,7 +206,7 @@ namespace ContaBancaria
 
                     case 6:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Sacar");
+                        Console.WriteLine("Sacar\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite o número da Conta: ");
@@ -222,7 +222,7 @@ namespace ContaBancaria
 
                     case 7:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Depositar");
+                        Console.WriteLine("Depositar\n");
                         Console.ResetColor();
 
                         Console.WriteLine("Digite o número da Conta: ");
@@ -239,7 +239,7 @@ namespace ContaBancaria
 
                     case 8:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Transferir valores entre Contas");
+                        Console.WriteLine("Transferir valores entre Contas\n");
                         Console.ResetColor();
                         
                         Console.WriteLine("Digite o número da Conta de Origem: ");
